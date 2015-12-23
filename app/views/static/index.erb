@@ -1,2 +1,43 @@
-<h1>Hello World</h1>
+<!-- <h1>Hello World</h1>
 <p>See Me in views/static/index.html.erb</p>
+
+ --> 
+<div class="alterurl">
+ 	<form action="/urls" method="post">
+		Enter URL:
+	 	<input type="text" name="long_url">
+	 	<input type="submit" value="Submit">
+	</form>
+</div>
+
+<%=error if @error%>
+
+<div class="alterurl">
+ <h1 class="blue">
+      *****UNLEASH THE POWER OF THE PINK*****
+ </h1>
+</div>
+
+<div class="bigmargin"><a href="http://dictionary.reference.com/browse/pink">Click here if you want to know more about this website</a></div>
+
+
+
+<!--  <form action="/:short_url" method="get">
+ 	Enter URL:
+ 	<input type="text" name="short_url">
+ 	<input type="submit" value="Submit">
+ </form> -->
+<div class="bigmargin"><a href="http://www.businessinsider.my/hello-kitty-is-not-a-cat-2014-8/?r=US&IR=T">Click here for further information</a></div>
+
+<div class="bigmargin"><a href="/">Please see below for your shortened link</a></div>
+
+
+<footer>
+<div class="biggermargin">
+ <p><a href="<%= @urls.short_url %>">http://localhost:9393/<%= @urls.short_url %></a></p>
+ <p><%= @urls.click_count %></p> 
+ <div id="nav-left">
+ 	<img src="/css/hellokitty.jpeg"/>
+ </div>
+  </div>
+</footer>

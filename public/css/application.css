@@ -1,0 +1,69 @@
+header {
+    height: 50px;
+    background: #FF1493;
+    font-style: italic;
+    font-size: 30px;
+    font-family: "Monospace";
+    text-decoration: none;
+}
+
+a:link{
+	color: blue;
+	text-decoration:none;
+}
+
+a:hover{
+	color: red;
+	text-decoration:none;
+}
+
+a:visited{
+	color: green;
+	text-decoration:none;
+}
+
+a:active{
+	color: yellow;
+	text-decoration:none;
+}
+
+#nav-left {
+	float: left;
+}
+
+#nav-right {
+	float: right;
+}
+
+
+.blue {
+ background: #FF69B4;
+ height: 40px;
+}
+
+.background {
+ background-image: url("pink.jpeg");
+}
+
+
+.alterurl {
+  margin: 10px auto;
+  text-align: center;
+  border: 5px pink solid;
+  padding: 10px;
+}
+
+.bigmargin {
+  margin: 80px auto;
+  text-align: center;
+  border: 10px pink solid;
+  padding: 50px;
+}
+
+.biggermargin {
+  margin: 150px auto;
+  text-align: center;
+  border: 80px pink solid;
+  padding: 80px;
+}
+
