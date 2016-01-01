@@ -7,6 +7,31 @@ header {
     text-decoration: none;
 }
 
+.headerlinks  {
+    color: teal;
+    float: right;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Verdana;
+    margin-right:20px;
+    text-align: right;
+ display: inline;
+}
+
+.active {
+   background-color: white;
+}
+
+.headerlinks a {
+padding: 20px;
+transition: background-color 0.5s ease;
+border-radius: 20px;
+margin-left: 20px;
+border-style: groove;
+border: 1px solid #ccc;
+cursor: auto;
+}
+
 a:link{
 	color: blue;
 	text-decoration:none;
@@ -37,12 +62,12 @@ a:active{
 
 
 .blue {
- background: #FF69B4;
+ background: #0000FF;
  height: 40px;
 }
 
 .background {
- background-image: url("pink.jpeg");
+ background-image: url("scenery2.jpg");
 }
 
 
@@ -65,5 +90,9 @@ a:active{
   text-align: center;
   border: 80px pink solid;
   padding: 80px;
+}
+
+#kitty-img {
+  position: relative;
 }
 

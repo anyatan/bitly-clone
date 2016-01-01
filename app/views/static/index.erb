@@ -1,11 +1,14 @@
+<pre>
+<%= Cowsay.say("Hello") %>
+</pre>
 <!-- <h1>Hello World</h1>
 <p>See Me in views/static/index.html.erb</p>
 
  --> 
 <div class="alterurl">
- 	<form action="/urls" method="post">
+ 	<form action="/urls" method="post" id="ajaxyo">
 		Enter URL:
-	 	<input type="text" name="long_url">
+	 	<input type="text" id="box" name="long_url">
 	 	<input type="submit" value="Submit">
 	</form>
 </div>
@@ -31,13 +34,12 @@
 
 <div class="bigmargin"><a href="/">Please see below for your shortened link</a></div>
 
-
 <footer>
 <div class="biggermargin">
  <p><a href="<%= @urls.short_url %>">http://localhost:9393/<%= @urls.short_url %></a></p>
  <p><%= @urls.click_count %></p> 
- <div id="nav-left">
- 	<img src="/css/hellokitty.jpeg"/>
+ <div>
+ 	<img src="/css/hellokitty.jpeg"/ id="kitty-img">
  </div>
   </div>
 </footer>

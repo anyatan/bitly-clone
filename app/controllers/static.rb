@@ -10,7 +10,11 @@ post '/urls' do
 	x = Url.new(long_url: params[:long_url])
 	x.shorten
 	x.save!
-	redirect to '/'
+	x.to_json
+	# redirect to '/'
+	#use return @long_url to immediately return the long_url without going to the controller 
+	#ajax is using this method, and return value back to ajax
+	
 end 
 
 get '/:short_url' do 

@@ -6,6 +6,9 @@
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
   -->
+
+
+
   <link rel="stylesheet" href="/css/normalize.css">
   <!--
     application.css is where you put your styles
@@ -14,6 +17,10 @@
 
 <!-- the below script is to link it to javascript which will be used later in the course. --> 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script src="/js/application.js"></script>
 
   <title></title>
@@ -22,8 +29,12 @@
   <header>
     <div id="nav-left"><a href="/">bitly</a></div>
     <div id="nav-right">
-      <a href="/">Sign In </a>
-      <a href="/">Sign Up </a>
+        <div class="active">
+         <div class="headerlinks">
+      <a href="/" class="hovering">Sign In </a>
+      <a href="/" class="hovering">Sign Up </a>
+    </div>
+    </div>
     </div>
   </header>
 <div class="background">
